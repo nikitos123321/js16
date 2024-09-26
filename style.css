@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.block {
+    width: 1000px;
+    height: 80vh;
+    margin: 0 auto;
+    border: 5px solid black;
+}
+
+.block1 {
+    background-color: antiquewhite;
+}
+
+.block2 {
+    background-color: cadetblue;
+}
+
+.block3 {
+    background-color: saddlebrown;
+}
+
+.block4 {
+    background-color: salmon;
+}
+
+.phone {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    background-color: rgb(93, 103, 210);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    animation: anim 1s;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        visibility: none;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
